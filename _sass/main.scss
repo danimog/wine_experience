@@ -9,6 +9,10 @@ html, body {
   background-color: $back-color;
 }
 
+.col-md-6{
+  margin-bottom: 1em;
+}
+
 .bg-menu-vwe{
   background-color: $back-color; 
 }
@@ -26,8 +30,13 @@ html, body {
 }
 
 .margine-top-negativo{
-  margin-top: -2em;
+  margin: -2em 0 2em 0;
 }
+
+.margine-top-negativo{
+  margin-top: 2em;
+}
+
 
 .home {
   text-align: center;

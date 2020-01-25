@@ -1,5 +1,7 @@
 html, body { height: 100%; font: 100% "Roboto Mono", sans-serif; margin: auto; background-color: #222125; }
 
+.col-md-6 { margin-bottom: 1em; }
+
 .bg-menu-vwe { background-color: #222125; }
 
 .navbar-menu-vwe { color: #D56B07; }
@@ -8,7 +10,9 @@ html, body { height: 100%; font: 100% "Roboto Mono", sans-serif; margin: auto; b
 
 .min-100 { min-height: 100vh; }
 
-.margine-top-negativo { margin-top: -2em; }
+.margine-top-negativo { margin: -2em 0 2em 0; }
+
+.margine-top-negativo { margin-top: 2em; }
 
 .home { text-align: center; background-color: #222125; }
 
