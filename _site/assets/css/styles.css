@@ -1,6 +1,6 @@
 body { font: 100% "Roboto Mono", sans-serif; }
 
-.home { text-align: center; background-color: #222125; }
+.home { text-align: center; background-color: #222125; min-height: 100%; }
 
 .vwe-logo { text-align: center; background-color: #222125; }
 
