@@ -5,11 +5,28 @@ $arancione-color: #D56B07;
 html, body {
   height: 100%;
   font: 100% $font-stack;
+  margin: auto;
+  background-color: $back-color;
+}
 
+.bg-menu-vwe{
+  background-color: $back-color; 
+}
+
+.navbar-menu-vwe{
+  color: $arancione-color;
+}
+
+.mr-auto{
+  margin-right: auto!important;
 }
 
 .min-100 {
     min-height: 100vh;
+}
+
+.margine-top-negativo{
+  margin-top: -2em;
 }
 
 .home {
