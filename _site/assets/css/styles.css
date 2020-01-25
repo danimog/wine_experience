@@ -6,6 +6,8 @@ html, body { height: 100%; font: 100% "Roboto Mono", sans-serif; }
 
 .vwe-logo { text-align: center; background-color: #222125; }
 
+.icon-vwe { background-color: #D56B07; }
+
 .logo-img { margin: 1.5em auto; }
 
 .circle-img { margin: .5em auto; border-radius: 50%; }
