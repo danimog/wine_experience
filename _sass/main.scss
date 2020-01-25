@@ -2,15 +2,19 @@ $font-stack: 'Roboto Mono', sans-serif;
 $back-color: #222125;
 $arancione-color: #D56B07;
 
-
-body {
+html, body {
+  height: 100%;
   font: 100% $font-stack;
+
+}
+
+.min-100 {
+    min-height: 100vh;
 }
 
 .home {
   text-align: center;
   background-color: $back-color;  
-  min-height: 100%;
 }
 
 .vwe-logo{
