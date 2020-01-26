@@ -23,7 +23,7 @@ layout: default
 	        <h5 class="card-title">THE LOCATION</h5>
 	        <p class="card-text">Excavated from the rocks, close to Doria’s castle, it’s an elegant, open, exciting and unique location. In the heart of Vernazza: in front of you only the sea.</p>
 			</div>
-		    <a href="#" class="btn text-right"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
+		    <a href="./location" class="btn text-right" id="location"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
 	    </div>
 	  </div>
 	  <div class="col-md-6 col-lg-3">
@@ -32,7 +32,7 @@ layout: default
 	        <h5 class="card-title">WHAT WILL YOU TASTE AND LEARN</h5>
 	        <p class="card-text">Wines and liqueurs that we select with love and passion from Cinque Terre and Italian areas. A selection of appetizers that perfectly matches with the wines served ...</p>
 	        </div>
-		    <a href="#" class="btn text-right"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
+		    <a href="./learn" class="btn text-right" id="learn"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
 	    </div>
 	  </div>
 	  <div class="col-md-6 col-lg-3">
@@ -41,7 +41,7 @@ layout: default
 	        <h5 class="card-title">TIME, BOOKING AND PRICES</h5>
 	        <p class="card-text">You can come when you like from 5 to 9 p.m. We don’t make reservations. A tasting of 3 different wines, smaller then a full glass, is starting from 15 euro per person</p>
 	    </div>
-	    <a href="#" class="btn text-right"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
+	    <a href="time" class="btn text-right" id="time"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
 	    </div>
 	  </div>
 	</div>
@@ -53,7 +53,7 @@ layout: default
 	        <h5 class="card-title">HOW TO REACH US</h5>
 	        <p class="card-text bg-trasparent">It can be reached from the square of Vernazza in just five minutes by going up through the characteristic alleys: there are about 90 steps.!</p>
 	        </div>
-		    <a href="#" class="btn text-right"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
+		    <a href="./reachus" class="btn text-right" id="reachus"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
 	    </div>
 	  </div>
 	  <div class="col-md-6 col-lg-3">
@@ -62,7 +62,7 @@ layout: default
 	        <h5 class="card-title">PRIVATE EVENTS</h5>
 	        <p class="card-text">Would you like to arrange a private wine tasting for you and your friends? For you and your spouse? A special wine tasting for your anniversary? When it comes to private tastings, anything is possible ...</p>
 			</div>
-		    <a href="#" class="btn text-right"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
+		    <a href="./privateevent" class="btn text-right" id="event"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
 	    </div>
 	  </div>
 	  <div class="col-md-6 col-lg-3">
@@ -71,7 +71,7 @@ layout: default
 	        <h5 class="card-title">VISIT OUR NEW SHOP</h5>
 	        <p class="card-text">Visit our new Cinque Sensi wineshop, located along the main road of the town, Via Roma 71 in Vernazza. You find our complete selection of ...</p>
 	        </div>
-		    <a href="#" class="btn text-right"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
+		    <a href="./visitshop" class="btn text-right" id="visitshop"><img class="img-fluid icon-vwe circle-img text-right" src="{{site.baseurl}}/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
 	    </div>
 	  </div>
 	</div>
@@ -94,17 +94,31 @@ layout: default
 <script type="text/javascript">
 	$(window).load(function () {
 		var welcome = 'I remember my first harvest in Vernazza, the endless staircase to the sky, kneeling under the pergola, the golden grape clusters, the silver reflections of the sea. Words in dialect,  pride, passion, tradition, effort and respect. Cellar, must aromas, fermentation days and happiness. Then, the table set, the whole family, the golden yellow wine in the glasses, I looked and listened: I was four years old. <br><br><strong>Vernazza Winexperience was born from these my emotions.</strong><br><br> I am Alessandro from Vernazza and my family has been in Vernazza for over six generations. I am a professional sommelier of A.I.S. (Associazione Italiana Sommelier),  and I live and work at Vernazza. Thanks to my job, I want to promote the culture of my country and  to contribuite to maintain a unique landscape. <br><br><strong>Alessandro Villa</strong>';
+
 	    $(".trigger_popup_vwe").click(function(){
-	    	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	    		console.log("mobile");
-	    		window.location.replace("./welcome");
-	    	}
-	    	else{
-	    		console.log("desktop");
-	    	}
 	    	if (document.getElementById("welcome")) {
-				$("#testo_popup").html(welcome);
-			}			
+	    		console.log("click!!!!");
+	    		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		    		window.location.replace("./welcome");
+		    	}
+		    	else{
+		    		$("#testo_popup").html(welcome);	
+		    	}
+			} else if (document.getElementById("learn")){
+				console.log("ciao");
+			 	window.location.replace("./learn");
+			} else if (document.getElementById("location")){
+				window.location.replace("./location");
+			} else if (document.getElementById("event")){
+				window.location.replace("./privateevent");
+			} else if (document.getElementById("reachus")){
+				window.location.replace("./reachus");
+			} else if (document.getElementById("time")){
+				window.location.replace("./time");
+			} else if (document.getElementById("visitshop")){
+				window.location.replace("./visitshop");
+			}
+
 	       $('.hover_bkgr_vwe').show();
 	    });
 	    $('.hover_bkgr_vwe').click(function(){

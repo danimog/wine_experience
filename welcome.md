@@ -1,8 +1,13 @@
 ---
-layout: pagina
+layout: pagina_base
 ---
+YOU ARE WELCOME
+===============
 I remember my first harvest in Vernazza, the endless staircase to the sky, kneeling under the pergola, the golden grape clusters, the silver reflections of the sea. Words in dialect,  pride, passion, tradition, effort and respect. Cellar, must aromas, fermentation days and happiness. Then, the table set, the whole family, the golden yellow wine in the glasses, I looked and listened: I was four years old.
+
 **Vernazza Winexperience was born from these my emotions.**
+
 I am Alessandro from Vernazza and my family has been in Vernazza for over six generations. I am a professional sommelier of A.I.S. (Associazione Italiana Sommelier),  and I live and work at Vernazza.
 Thanks to my job, I want to promote the culture of my country and  to contribuite to maintain a unique landscape.
+
 **Alessandro Villa**
