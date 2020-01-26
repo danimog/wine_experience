@@ -20,7 +20,7 @@
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark bg-menu-vwe">
 
-  <a class="navbar-brand" href="#"><img class="img-fluid" src="/wine_experience/assets/images/logo_small.jpg"></a>
+  <a class="navbar-brand" href="/wine_experience"><img class="img-fluid" src="/wine_experience/assets/images/logo_small.jpg"></a>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -41,9 +41,9 @@
   </div>
 </nav>
 
-<img class="img-fluid" src="/wine_experience/assets/images/11img_vwe.png" style="width: 100%">
+<img class="img-fluid" src="/wine_experience/assets/images/foto_home.png" style="width: 100%">
 
-
+<div class="card-group">
 	<div class="row margine-top-negativo">
 	  <div class="col-md-6 col-lg-3">
 	    <div class="card text-center">
@@ -51,7 +51,7 @@
 	        <h5 class="card-title">YOU ARE WELCOME</h5>
 	        <p class="card-text bg-trasparent">I remember my first harvest in Vernazza, the endless staircase to the sky, kneeling under the pergola, the golden grape clusters, the silver reflections of the sea ...</p>
 	        </div>
-		    <a href="#" class="btn text-right"><img class="img-fluid icon-vwe circle-img text-right" src="/wine_experience/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
+		    <a class="btn text-right trigger_popup_vwe" id="welcome"><img class="img-fluid icon-vwe circle-img text-right" src="/wine_experience/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
 	    </div>
 	  </div>
 	  <div class="col-md-6 col-lg-3">
@@ -83,7 +83,7 @@
 	  </div>
 	</div>
 
-	<div class="row margine-top-positivo">
+	<div class="row margine-top-negativo">
 	  <div class="col-md-6 col-lg-3">
 	    <div class="card text-center">
 	      <div class="card-body bg-trasparent">
@@ -111,8 +111,16 @@
 		    <a href="#" class="btn text-right"><img class="img-fluid icon-vwe circle-img text-right" src="/wine_experience/assets/icons/arrow-right.svg" alt="" width="48" height="48" title="arrow right"></a>
 	    </div>
 	  </div>
-	  
 	</div>
+</div>
+
+<div class="hover_bkgr_vwe">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">&times;</div>
+        <div id="testo_popup"></div>
+    </div>
+</div>
 
 
 <div id="map"></div>
@@ -341,7 +349,7 @@
 		var vwe = {lat: 44.1343852, lng: 9.6825887};
 		// The map, centered at Uluru
 		var map = new google.maps.Map(
-		  document.getElementById('map'), {zoom: 16, center: vwe});
+		  document.getElementById('map'), {zoom: 17, center: vwe});
 		// The marker, positioned at Uluru
 		var marker = new google.maps.Marker({position: vwe, map: map});
 
@@ -368,6 +376,25 @@ lat/lon: 44.134364,9.680266
 	<hr>
 	Info: vernazzawinexperience@gmail.com | +39 331 3433801
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(window).load(function () {
+		var welcome = 'I remember my first harvest in Vernazza, the endless staircase to the sky, kneeling under the pergola, the golden grape clusters, the silver reflections of the sea. Words in dialect,  pride, passion, tradition, effort and respect. Cellar, must aromas, fermentation days and happiness. Then, the table set, the whole family, the golden yellow wine in the glasses, I looked and listened: I was four years old. <br><br><strong>Vernazza Winexperience was born from these my emotions.</strong><br><br> I am Alessandro from Vernazza and my family has been in Vernazza for over six generations. I am a professional sommelier of A.I.S. (Associazione Italiana Sommelier),  and I live and work at Vernazza. Thanks to my job, I want to promote the culture of my country and  to contribuite to maintain a unique landscape. <br><br><strong>Alessandro Villa</strong>';
+	    $(".trigger_popup_vwe").click(function(){
+	    	if (document.getElementById("welcome")) {
+				$("#testo_popup").html(welcome);
+			}			
+	       $('.hover_bkgr_vwe').show();
+	    });
+	    $('.hover_bkgr_vwe').click(function(){
+	        $('.hover_bkgr_vwe').hide();
+	    });
+	    $('.popupCloseButton').click(function(){
+	        $('.hover_bkgr_vwe').hide();
+	    });
+	});
+</script>
     </div>
   
 
@@ -376,8 +403,6 @@ lat/lon: 44.134364,9.680266
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 
   </body>

@@ -12,7 +12,7 @@ html, body { height: 100%; font: 100% "Roboto Mono", sans-serif; margin: auto; b
 
 .margine-top-negativo { margin: -2em 0 2em 0; }
 
-.margine-top-negativo { margin-top: 2em; }
+.margine-top-positivo { margin-top: 2em 0; }
 
 .home { text-align: center; background-color: #222125; }
 
@@ -45,6 +45,26 @@ html, body { height: 100%; font: 100% "Roboto Mono", sans-serif; margin: auto; b
 
 .testo-immagine { background-color: #D56B07; color: white; font-size: 14px; padding: 1em; }
 
+.navbar-nav { font: 140% "Roboto Mono", sans-serif; }
+
+.card-title { color: #D56B07; }
+
+/** GOOGLE MAP */
 #map { height: 650px; /* The height is 400 pixels */ width: 100%; /* The width is the width of the web page */ }
+
+/* Popup box BEGIN */
+.hover_bkgr_vwe { background: rgba(0, 0, 0, 0.4); cursor: pointer; display: none; height: 100%; position: fixed; text-align: center; top: 0; width: 100%; z-index: 10000; }
+
+.hover_bkgr_vwe .helper { display: inline-block; height: 100%; vertical-align: middle; }
+
+.hover_bkgr_vwe > div { background-color: #fff; box-shadow: 10px 10px 60px #555; display: inline-block; height: auto; max-width: 551px; min-height: 100px; vertical-align: middle; width: 60%; position: relative; border-radius: 8px; padding: 15px 5%; }
+
+.popupCloseButton { background-color: #fff; border: 3px solid #999; border-radius: 50px; cursor: pointer; display: inline-block; font-family: arial; font-weight: bold; position: absolute; top: -20px; right: -20px; font-size: 25px; line-height: 30px; width: 30px; height: 30px; text-align: center; }
+
+.popupCloseButton:hover { background-color: #ccc; }
+
+.trigger_popup_vwe { cursor: pointer; font-size: 20px; margin: 20px; display: inline-block; font-weight: bold; }
+
+/* Popup box END */
 
 /*# sourceMappingURL=styles.css.map */
