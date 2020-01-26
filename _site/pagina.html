@@ -114,7 +114,7 @@
 	</div>
 </div>
 
-<div class="hover_bkgr_vwe">
+<div class="hover_bkgr_vwe min-100">
     <span class="helper"></span>
     <div>
         <div class="popupCloseButton">&times;</div>
@@ -377,11 +377,19 @@ lat/lon: 44.134364,9.680266
 	Info: vernazzawinexperience@gmail.com | +39 331 3433801
 </div>
 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 	$(window).load(function () {
 		var welcome = 'I remember my first harvest in Vernazza, the endless staircase to the sky, kneeling under the pergola, the golden grape clusters, the silver reflections of the sea. Words in dialect,  pride, passion, tradition, effort and respect. Cellar, must aromas, fermentation days and happiness. Then, the table set, the whole family, the golden yellow wine in the glasses, I looked and listened: I was four years old. <br><br><strong>Vernazza Winexperience was born from these my emotions.</strong><br><br> I am Alessandro from Vernazza and my family has been in Vernazza for over six generations. I am a professional sommelier of A.I.S. (Associazione Italiana Sommelier),  and I live and work at Vernazza. Thanks to my job, I want to promote the culture of my country and  to contribuite to maintain a unique landscape. <br><br><strong>Alessandro Villa</strong>';
 	    $(".trigger_popup_vwe").click(function(){
+	    	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	    		console.log("mobile");
+	    		window.location.replace("./welcome");
+	    	}
+	    	else{
+	    		console.log("desktop");
+	    	}
 	    	if (document.getElementById("welcome")) {
 				$("#testo_popup").html(welcome);
 			}			
@@ -395,6 +403,8 @@ lat/lon: 44.134364,9.680266
 	    });
 	});
 </script>
+
+
     </div>
   
 

@@ -26,6 +26,8 @@ html, body { height: 100%; font: 100% "Roboto Mono", sans-serif; margin: auto; b
 
 .titolo { color: #D56B07; }
 
+.testo-bianco { color: white; }
+
 .staff { margin: 2em auto; }
 
 .footer { margin: 1em auto; color: #D56B07; }
