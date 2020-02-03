@@ -1,4 +1,5 @@
 $font-stack: 'Roboto Mono', sans-serif;
+$font-intro: 'Dancing Script',cursive;
 $back-color: #222125;
 $arancione-color: #D56B07;
 
@@ -7,6 +8,23 @@ html, body {
   font: 100% $font-stack;
   margin: auto;
   background-color: $back-color;
+}
+
+.intro{
+  margin: 1em auto;
+  font: 220% $font-intro;
+  color: white;
+}
+
+.cardos{
+  margin: 1em;
+  background-color: $back-color;
+}
+
+
+.cardos-text{
+  background-color: $back-color;
+  color: white;
 }
 
 .col-md-6{
@@ -33,8 +51,8 @@ html, body {
   margin: -2em 0 2em 0;
 }
 
-.margine-top-positivo{
-  margin-top: 2em 0;
+.margine-card-positivo{
+  margin: 1em auto;
 }
 
 

@@ -1,5 +1,11 @@
 html, body { height: 100%; font: 100% "Roboto Mono", sans-serif; margin: auto; background-color: #222125; }
 
+.intro { margin: 1em auto; font: 220% "Dancing Script", cursive; color: white; }
+
+.cardos { margin: 1em; background-color: #222125; }
+
+.cardos-text { background-color: #222125; color: white; }
+
 .col-md-6 { margin-bottom: 1em; }
 
 .bg-menu-vwe { background-color: #222125; }
@@ -12,7 +18,7 @@ html, body { height: 100%; font: 100% "Roboto Mono", sans-serif; margin: auto; b
 
 .margine-top-negativo { margin: -2em 0 2em 0; }
 
-.margine-top-positivo { margin-top: 2em 0; }
+.margine-card-positivo { margin: 1em auto; }
 
 .home { text-align: center; background-color: #222125; }
 
