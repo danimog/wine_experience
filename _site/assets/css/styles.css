@@ -1,12 +1,16 @@
 html, body { height: 100%; font: 100% "Roboto Mono", sans-serif; margin: auto; background-color: #222125; }
 
+a:link, a:hover, a:visited, a:active { color: #D56B07; }
+
+.logo-home { max-width: 65%; }
+
 .intro { margin: 1em auto; font: 180% "Dancing Script", cursive; color: white; }
+
+.margine-centrato { margin: .5em auto; }
 
 .cardos { margin: 1em; background-color: #222125; }
 
 .cardos-text { background-color: #222125; color: white; }
-
-.col-md-6 { margin-bottom: 1em; }
 
 .bg-menu-vwe { background-color: #222125; }
 

@@ -10,10 +10,22 @@ html, body {
   background-color: $back-color;
 }
 
+a:link, a:hover, a:visited, a:active{
+  color: $arancione-color;
+} 
+
+.logo-home{
+  max-width: 65%;
+}
+
 .intro{
   margin: 1em auto;
   font: 180% $font-intro;
   color: white;
+}
+
+.margine-centrato{
+  margin: .5em auto;
 }
 
 .cardos{
@@ -21,14 +33,9 @@ html, body {
   background-color: $back-color;
 }
 
-
 .cardos-text{
   background-color: $back-color;
   color: white;
-}
-
-.col-md-6{
-  margin-bottom: 1em;
 }
 
 .bg-menu-vwe{
