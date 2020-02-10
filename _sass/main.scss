@@ -14,6 +14,11 @@ a:link, a:hover, a:visited, a:active{
   color: $arancione-color;
 } 
 
+.container-xl{
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
 .logo-home{
   max-width: 65%;
 }

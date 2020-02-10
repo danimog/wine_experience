@@ -2,6 +2,8 @@ html, body { height: 100%; font: 100% "Roboto Mono", sans-serif; margin: auto; b
 
 a:link, a:hover, a:visited, a:active { color: #D56B07; }
 
+.container-xl { max-width: 1320px; margin: 0 auto; }
+
 .logo-home { max-width: 65%; }
 
 .intro { margin: 1em auto; font: 180% "Dancing Script", cursive; color: white; }
