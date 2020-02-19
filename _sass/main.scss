@@ -1,6 +1,7 @@
 $font-stack: 'Roboto Mono', sans-serif;
 $font-intro: 'Dancing Script',cursive;
-$back-color: #222125;
+/*$back-color: #222125;*/
+$back-color:#232227;
 $arancione-color: #D56B07;
 
 html, body {
@@ -36,6 +37,7 @@ a:link, a:hover, a:visited, a:active{
 .cardos{
   margin: 1em;
   background-color: $back-color;
+  border: 0px;
 }
 
 .cardos-text{
